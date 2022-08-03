@@ -8,6 +8,7 @@
 
 .nav {
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100vw;
   background-color: #F4F4F4;
@@ -48,7 +49,7 @@
   padding-top: 94px;
   width: 100%;
   margin: 0 auto;
-  background-color: #eaeaea;
+  background-color: #F4F4F4;
 }
 
 .intro__left-column {
@@ -98,19 +99,47 @@
   background-color: #319e75;
 }
 
+.intro__hit-product {
+  margin: 0;
+  padding: 0;
+  margin-top: 167px;
+}
+
+.hit-product {
+  position: relative;
+  font-size: 0.9em;
+  line-height: 1;
+  font-weight: 400;
+  color: #151515;
+}
+
+.hit-product::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 224px;
+  width: 132px;
+  height: 2px;
+  background-color: #D7D4D4;
+}
+
 .intro__right-column {
+  position: relative;
   width: 100%;
   max-width: 810px;
+  text-align: right;
 }
 
 .intro__hit-image {
-  position: sticky;
+  position: absolute;
   bottom: 0;
+  right: 370px;
   z-index: 1;
   width: 440px;
   height: 300px;
   background-color: #F4F4F4;
   border-radius: 20px;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.2);
   object-fit: none;
   object-position: center;
 }/*# sourceMappingURL=styles.css.map */
